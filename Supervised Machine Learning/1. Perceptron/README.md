@@ -6,8 +6,6 @@ The Perceptron is a simple yet foundational supervised learning algorithm used f
 
 In this project, the Perceptron was applied to predict whether an MLB player qualifies as an All-Star based on Statcast-style hitting metrics (e.g., Barrel%, Exit Velocity, and HardHit%). This provides insight into how well linear boundaries can separate high-performing hitters from the rest.
 
----
-
 ## Core Implementation Details
 
 The `Perceptron` class contains three main methods:
