@@ -10,7 +10,7 @@ This section applies two key graph algorithms to MLB Statcast data to uncover st
 
 Label Propagation is an iterative algorithm for unsupervised community detection. Each node adopts the label most common among its neighbors until convergence.
 
-- **Time Complexity:** \( \mathcal{O}(|E|) \)
+- **Time Complexity:** - `O(|E|)`
 - **Strengths:** Fast, scalable, and effective for discovering naturally forming player groups
 
 
@@ -19,7 +19,4 @@ Label Propagation is an iterative algorithm for unsupervised community detection
 A **clique** is a set of nodes all directly connected to each other. The **maximum clique** is the largest such set.
 
 - **Formulation:** MILP with binary variables and pairwise constraints
-- **Solves:**  
-  \[
-  \max \sum x_i \quad \text{subject to} \quad x_i + x_j \leq 1 \; \text{if } (i, j) \notin E
-  \]
+- **Solves:** Maximize ∑xᵢ subject to xᵢ + xⱼ ≤ 1 for all (i, j) ∉ E
