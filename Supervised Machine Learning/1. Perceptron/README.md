@@ -16,4 +16,4 @@ Weights $\boldsymbol{w}$ and bias $b$ are updated through the perceptron learnin
 
 The perceptron works best on **linearly separable** datasets and does not produce probabilistic outputs. It is a deterministic, mistake-driven learner that converges only if a perfect linear separator exists.
 
-In our implementation, we apply the perceptron to predict binary outcomes in an MLB context — for example, determining whether a player had an above-average wRC+ based on features like exit velocity, launch angle, and hard hit rate.
+In this project, we use the Perceptron to classify whether **an MLB player is an All-Star or not**, based on Statcast features such as exit velocity, barrel percentage, and launch angle.

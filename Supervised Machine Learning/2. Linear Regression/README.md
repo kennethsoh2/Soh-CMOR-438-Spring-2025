@@ -12,4 +12,5 @@ where $\boldsymbol{\beta}$ are the learned coefficients and $\beta_0$ is the int
 
 Linear regression is most effective when the target variable has a **linear dependence** on the features and the residuals are homoscedastic and normally distributed.
 
-In our case, we use linear regression to predict continuous player performance metrics like **WAR** or **wRC+** from Statcast features such as barrel percentage, launch angle, and sprint speed.
+In this notebook, we use linear regression to **predict a player's WAR** based on features like barrel percentage, exit velocity, launch angle, and sprint speed from MLB Statcast data.
+

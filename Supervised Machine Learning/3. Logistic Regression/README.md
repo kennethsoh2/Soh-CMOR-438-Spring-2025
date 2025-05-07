@@ -1,15 +1,16 @@
 # Logistic Regression
 
-**Logistic Regression** is a classification model that outputs probabilities between 0 and 1. Like linear regression, it computes a weighted sum of the inputs, but it then passes this value through a sigmoid function to map it into the [0, 1] range. This makes it suitable for binary classification tasks.
+**Logistic Regression** is a classification model that outputs probabilities between 0 and 1. Like linear regression, it computes a weighted sum of input features, but it then applies the sigmoid function to map that value into a probability range.
 
-The logistic regression model is defined as:
+The model is defined as:
 
 $$
-P(y = 1 \mid \mathbf{x}) = \frac{1}{1 + e^{-\mathbf{x}^\top \boldsymbol{\beta}}}
+P(y = 1 \mid \mathbf{x}) = \frac{1}{1 + e^{-\mathbf{x}^\top \boldsymbol{w}}}
 $$
 
-We estimate the weights $\boldsymbol{\beta}$ using **gradient descent**, which iteratively updates the model based on the binary cross-entropy loss. This process continues for a fixed number of epochs or until convergence.
+The weights are estimated using **gradient descent** by minimizing the **binary cross-entropy loss** between predicted probabilities and actual labels.
 
-Logistic regression is most effective when the data is **linearly separable**. It differs from the perceptron by using soft probabilities instead of hard thresholds, which allows for more stable updates and probabilistic interpretation.
+Logistic regression is best suited for **binary classification problems**, especially when the classes are linearly separable or nearly so. Unlike the perceptron, it outputs soft probabilities rather than hard class boundaries, making it more stable for noisy data.
 
-In our case, we apply logistic regression to MLB player data. For example, we use Statcast features like barrel percentage, exit velocity, and launch angle to predict whether a player is an All-Star (1) or not (0). The model outputs the probability that each player qualifies as an All-Star based on these performance indicators.
+In this project, we use logistic regression to predict whether an **MLB player had over 1 WAR** in the 2022 season, based on features such as barrel percentage, exit velocity, and launch angle from Statcast data.
+
