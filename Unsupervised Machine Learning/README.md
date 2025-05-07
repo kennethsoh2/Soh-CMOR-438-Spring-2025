@@ -9,6 +9,5 @@ In this section, we apply the following unsupervised learning techniques to MLB 
 1. **K-Means Clustering** — Groups players with similar offensive Statcast profiles, such as Barrel%, Launch Angle, and Hard Hit%.
 2. **DBSCAN** — Identifies dense regions of similar hitters while marking outliers (noise).
 3. **Dimensionality Reduction (PCA)** — Reduces high-dimensional swing and power metrics to principal components for visualization and clustering.
-4. **Label Propagation on Graphs** — Builds a similarity graph of hitters and uncovers communities using iterative label spreading.
 
-These methods allow us to segment players into meaningful groups and visualize offensive tendencies without needing outcome labels like WAR or All-Star status.
+These methods allow us to segment players into meaningful groups and visualize offensive tendencies.

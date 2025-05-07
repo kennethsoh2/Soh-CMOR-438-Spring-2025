@@ -1,7 +1,5 @@
 # Graph Theory
 
-# Graph Theory: Player Similarity Networks
-
 This section applies two key graph algorithms to MLB Statcast data to uncover structure in player similarity:
 
 1. **Label Propagation** – identifies clusters of similar players.
